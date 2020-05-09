@@ -1,0 +1,12 @@
+Package: bitfinexOCHLdata
+Type: Package
+Title: Provide access to OHCL data via bitfinex API
+Version: 0.1.0
+Author: Wellington Silva
+Maintainer: The package maintainer <wellingtsilvdev@outlook.com>
+Description: Provide access to OHCL data via bitfinex API and can return
+    open, close, high, low, volume and dates data from 5m, 15m, 30m, 1h, 1D timeframes.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
