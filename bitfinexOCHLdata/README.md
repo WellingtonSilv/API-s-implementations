@@ -1,12 +1,3 @@
----
-title: "README"
-output: html_notebook
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## bitfinexOCHLdata: Bitfinex API implementation
 
 This package contain a function that provide access to Bitfinex OCHL data. OCHL data can be download from 5m, 15m, 30m, 1h and 1D timeframes and period to be downloaded can be choosed by the user.
@@ -48,6 +39,7 @@ data <- bitfinex_OCHL_data(symbol = 'tBTCUSD'
                            , sorted = 1
                            , all_data = TRUE)
 ```
+![](https://github.com/WellingtonSilv/API-s-implementations/blob/master/bitfinexOCHLdata/readme_plots/plot1.png)
 
 The data will have the following format and dates are in UTC-3 as POSIXct in 5m, 15m, 30m and 1h timeframes
 and in string format in 1D timeframe.
@@ -55,6 +47,7 @@ and in string format in 1D timeframe.
 ```{r example 2}
 head(data)
 ```
+![](https://github.com/WellingtonSilv/API-s-implementations/blob/master/bitfinexOCHLdata/readme_plots/plot2.png)
 
 You can also download especific periods using 'all_data' as FALSE, note that a print with cat()
 function are made always when a window of data are being requested to bitfinex API, when
@@ -69,7 +62,9 @@ data <- bitfinex_OCHL_data(symbol = 'tBTCUSD'
                            , sorted = 1
                            , all_data = TRUE)
 ```
+![](https://github.com/WellingtonSilv/API-s-implementations/blob/master/bitfinexOCHLdata/readme_plots/plot3.png)
 
 ```{r exemple 4}
 head(data)
 ```
+![](https://github.com/WellingtonSilv/API-s-implementations/blob/master/bitfinexOCHLdata/readme_plots/plot4.png)
