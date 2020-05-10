@@ -11,7 +11,7 @@ install.packages("remotes")
 ```
 Now just call the code bellow to install the package from this github repository
 ```{r example}
-remotes::install_github(""WellingtonSilv/API-s-implementations/bitfinexOCHLdata"")
+remotes::install_github("WellingtonSilv/API-s-implementations/bitfinexOCHLdata")
 ```
 
 ## Usage
@@ -23,9 +23,9 @@ To use this function the libraries library httr, jsonlite and lubridate are nece
 libraries if you don't already have installed using the commands below:
 
 ```{r example}
-install.packages('httr')
-install.packages('jsonlite')
-install.packages('lubridate')
+install.packages("httr")
+install.packages("jsonlite")
+install.packages("lubridate")
 ```
 
 The arguments that can be passed by the user are:
