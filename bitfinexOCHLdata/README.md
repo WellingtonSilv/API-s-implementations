@@ -2,8 +2,31 @@
 
 This package contain a function that provide access to Bitfinex OCHL data. OCHL data can be download from 5m, 15m, 30m, 1h and 1D timeframes and period to be downloaded can be choosed by the user.
 
+## How to install bitfinexOCHLdata package
+
+First install 'remotes' library from CRAN
+
+```{r example}
+install.packages("remotes")
+```
+Now just call the code bellow to install the package from this github repository
+```{r example}
+remotes::install_github(""WellingtonSilv/API-s-implementations/bitfinexOCHLdata"")
+```
+
+## Usage
+
 The user just need to pass the following arguments and the bitfinex_OCHL_data() function will return a dataframe
 with open, close, high, low, volume and dates information.
+
+To use this function the libraries library httr, jsonlite and lubridate are necessary so install all this three
+libraries if you don't already have installed using the commands below:
+
+```{r example}
+install.packages('httr')
+install.packages('jsonlite')
+install.packages('lubridate')
+```
 
 The arguments that can be passed by the user are:
 
@@ -21,8 +44,6 @@ The arguments that can be passed by the user are:
 
 **all_data-->** A logical TRUE or FALSE, TRUE download all historical OCHL data, FALSE download only the window
 selected with start and end date parameters 
-
-## Usage
 
 **OBS: If the function stay more than 10s loading and not printing "downloading window...", just stop the function and execute the function again that will works perfectly!**
 
