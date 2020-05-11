@@ -206,6 +206,9 @@ bitfinex_OCHL_data <- function(symbol = 'tBTCUSD'
     if(i==n_windows_r){
       cat('download finished!','\n')
     }
+
+    # sleep time to avoid rate limits
+    Sys.sleep(2)
   } # end of loop
 
   # removing the fisrt row
