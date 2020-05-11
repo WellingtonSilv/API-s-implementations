@@ -45,8 +45,6 @@ The arguments that can be passed by the user are:
 **all_data-->** A logical TRUE or FALSE, TRUE download all historical OCHL data, FALSE download only the window
 selected with start and end date parameters 
 
-**OBS: If the function stay more than 10s loading and not printing "downloading window...", just stop the function and execute the function again that will works perfectly!**
-
 An important parameter is 'all_data', if you don't want to pull all historical data from start date to today,
 set this parameter to FALSE, it's this parameter it's TRUE the function will ignore 'end_date' parameter
 and use current date as 'end_date' parameter.
